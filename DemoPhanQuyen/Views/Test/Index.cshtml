@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<form  id="myform"  method="post"  action ="/Test/RESURT" >
+    <label>Name</label><input name="Name" id="Name" type="text"/><br />
+    <label>Pass</label><input name="Pass" id="Pass" type="password" /><br />
+    <button type="submit">Login</button>
+</form>
+<script>
+    $(document).ready(function () {
+        $("#myform").submit(function () {
+            alert("da submi thanh cong");
+        })
+    });
+</script>
+

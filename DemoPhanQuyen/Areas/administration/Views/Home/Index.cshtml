@@ -1,0 +1,28 @@
+﻿@using DemoPhanQuyen.Areas.administration.Help
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<Type> lstCOntroller = (List<Type>)ViewBag.LstController;
+
+}
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+@Html.Raw(ViewBag.menu);
+
+
+<script>
+    $(function () {
+
+        $("#All_HomeController").on("click", function (e) {
+            if (this.checked == true) {
+                alert("Bạn vừa thích freetuts.net");
+                $("input:")
+                $('.HomeController').attr('checked',true);
+            }
+            else if (this.checked == false) {
+                alert("Bạn vừa bỏ thích freetuts.net");
+                $('.HomeController').attr('checked',false);
+            }
+        });
+    });
+</script>
